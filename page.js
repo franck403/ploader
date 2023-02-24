@@ -2,12 +2,12 @@ function url() {
   function load(url,id_to_place_content){
     const id = id_to_place_content
     fetch(url)
-      .then((response) => response.test())
+      .then((response) => response.text())
       .then((data) => document.getElementById(id).innerHTML = data);
   }
   function get(url){
     fetch(url)
-      .then((response) => response.test())
+      .then((response) => response.text())
       .then((data) => return data);
   }
 }
