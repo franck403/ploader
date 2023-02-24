@@ -5,10 +5,5 @@ function url() {
       .then((response) => response.text())
       .then((data) => document.getElementById(id).innerHTML = data);
   }
-  function get(url){
-    fetch(url)
-      .then((response) => response.text())
-      .then((data) => return data);
-  }
 }
-console.log("[info] ploader is started. command are url.load(url,id where content is place) and url.get(url) do a fetch requets and you get the data")
+console.log("[info] ploader is started. command are url.load(url,id where content is place) ")
